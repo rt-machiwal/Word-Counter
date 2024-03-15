@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/a?f=classic&s=solid">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+
+        <h1>Word Counter</h1>
+    <div class="container">
+        <div class="buttons-container">
+            <button class="btn" onclick="clearText()"><i class="fa-sharp fa-solid fa-arrows-rotate"></i></button>
+            <button class="btn" onclick="copyText()"><i class="fa-regular fa-copy"></i></button>
+            <button class="btn" onclick="changeCase('uppercase')"><i class="fas fa-font"></i> </button>
+            <button class="btn" onclick="changeCase('lowercase')"><img src="a.PNG" height="20px"> </button>
+        </div>
+        <div class="input-container">
+        <textarea id="userText" placeholder="Type or paste your text here..."></textarea>
+    </div>
+        <div class="result-container">
+            <div class="result-group">
+                <p>Total words: <span id="noOfWord">0</span></p>
+            </div>
+            <div class="result-group">
+                <p>Total characters: <span id="noOfChar">0</span></p>
+            </div>
+            <div class="result-group">
+                <p>Total paragraphs: <span id="noOfPara">0</span></p>
+            </div>
+            <div class="result-group">
+                <p>Total sentences: <span id="noOfSen">0</span></p>
+            </div>
+            <div class="result-group">
+                <p>Reading time: <span id="readingTime">0</span> minutes</p>
+            </div>
+            <div class="result-group">
+                <p>Total white spaces: <span id="whiteSpaces">0</span></p>
+            </div>
+            
+        </div>
+        
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
